@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="shortcut icon" type="image/x-icon" href="../setting/icon.ico" />
+		<title>EarthHealthScreenings</title>
+        <link rel="stylesheet" href="../setting/main.css">
+    </head>
+    <body>
+        <p id="screen"></p>
+        <p id="window"></p>
+
+        <script>
+            // To calculate screen width and height
+            screenWidth = screen.width;
+            screenHeight = screen.height;
+
+            // Get the browser window size
+            windowWidth = window.innerWidth;
+            windowHeight = window.innerHeight;
+
+            bodyWidth = windowWidth - 55;
+            bodyHeight = windowHeight / 3;
+        </script>
+
+        <div id="mainImg" style="margin-top:53px; margin-left:55px;">
+            <img id="mainTopImg" style="transition: all 0.2s linear;" src="../infoImage/europe_main.jpg">
+            <div class="mainTopText" style="margin-top:-45%;">EUROPE</div>
+        </div>
+
+        <div class="outerDiv" id="outer1" style="font-family: newFont; margin-top:50px;">
+            <div class="middleDiv">
+                <div class="inlineDiv">
+                    <div class="tableOuterDiv">
+                        <table class="infoTable" id="card1">
+                            <tr>
+                                <th height="30px;">방사능 오염</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="keyword" href="../europe/europe-1.html">
+                                        <figure>
+                                            <img id="img1" width="100%" src="https://upload.wikimedia.org/wikipedia/commons/6/69/Chernobyl_npp_retouched-1.jpg">
+                                            <figcaption style="line-height:250px; margin:auto; text-align: center;">자세히보기</figcaption>
+                                        </figure>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr height="140px;">
+                                <td style="padding-left:10px; padding-right:10px;">
+                                    <br>우크라이나 체르노빌은<hr><br>원전 사고로 대표되는 곳으로,<hr><br>1986년에 사고가 발생했으며<hr><br>이로 인해 많은 피해가 발생했다.<hr><br>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div style="width:60px; float:left; height:100px;"></div>
+                    <div class="tableOuterDiv">
+                        <table class="infoTable" id="card2">
+                            <tr>
+                                <th height="30px;">수질 및 토양 오염</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="keyword" href="../europe/europe-2.html">
+                                        <figure>
+                                            <img id="img2" width="100%" src="https://t1.daumcdn.net/cfile/tistory/26026A3F57C2EEDD30">
+                                            <figcaption style="line-height:250px; margin:auto; text-align: center;">자세히보기</figcaption>
+                                        </figure>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr height="140px;">
+                                <td style="padding-left:10px; padding-right:10px;">
+                                    <br>러시아 제르진스크는<hr><br>러시아의 핵심 화학산업 지역으로,<hr><br>
+                                    1930년~1988년 30만 톤의 화학 폐기물이<hr><br>
+                                    이 지역에 방출되었다.<hr><br>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div style="width:60px; float:left; height:100px;"></div>
+                    <div class="tableOuterDiv">
+                        <table class="infoTable" id="card3">
+                            <tr>
+                                <th height="30px;">대기 및 토양 오염</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="keyword" href="../europe/europe-3.html">
+                                        <figure>
+                                            <img id="img3" width="100%" src="https://dispatch.cdnser.be/wp-content/uploads/2017/12/20171201193648_google_co_kr_20171201_170110.jpg">
+                                            <figcaption style="line-height:250px; margin:auto; text-align: center;">자세히보기</figcaption>
+                                        </figure>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr height="140px;">
+                                <td style="padding-left:10px; padding-right:10px;">
+                                    <br>러시아 노릴스크는<hr><br>1935년에 생긴 공업 도시로<hr><br>
+                                    이 지역의 노동자의 평균 수명은<hr><br>
+                                    러시아 평균보다 10년 정도 적다.<hr><br>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer style="width:100%;">
+            <p style="font-size:5px;">
+                <br><br>
+                <span style="color:rgb(20, 134, 41);">2022-1 WebProgramming Term Project</span><br>
+                <span style="color:rgb(254, 148, 0); font-weight:bold; font-size:15px;">EarthHealthScreenings</span><br>
+                Gachon University. SW<br>
+                201935004 고지민 | 202135324 배자운 | 202234886 노창준 | 202234889 문지석
+                <br>
+            </p>
+        </footer>
+
+        <header>
+            <a href="../main.html"><h1><img src="../setting/earth.png" align=center width="40px" height="40px">  EarthHealthScreenings</h1></a>
+        </header>
+
+        <div class="left-side-bar">
+            <div class="status-ico">
+                <span><img src="../setting/menu.png" width="30" height="30"></span>
+                <span><img src="../setting/menu.png" width="30" height="30"></span>
+            </div>
+    
+                <ul>
+                    <li>
+                        <a href="../continent/asia.html">ASIA</a>
+                    </li>
+                    <li>
+                        <a href="../continent/europe.html">EUROPE</a>
+                    </li>
+                    <li>
+                        <a href="../continent/america.html">AMERICA</a>
+                    </li>
+                    <li>
+                        <a href="../continent/oceania.html">OCEANIA</a>
+                    </li>
+                    <li>
+                        <a href="../continent/africa.html">AFRICA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("mainImg").style.width = windowWidth - 80 + "px";
+            document.getElementById("mainImg").style.height = windowHeight - 70 + "px";
+	        document.getElementById("mainTopImg").style.width = document.getElementById("mainImg").style.width;
+
+            var cardWidth = parseInt((screenWidth - 55) / 3.6);
+            var cardHeight = parseInt((screenHeight * 0.8) - 150);
+	        document.getElementById("card1").style.width = cardWidth + "px";
+            document.getElementById("card1").style.height = cardHeight + "px";
+	        document.getElementById("card2").style.width = cardWidth + "px";
+            document.getElementById("card2").style.height = cardHeight + "px";
+	        document.getElementById("card3").style.width = cardWidth + "px";
+            document.getElementById("card3").style.height = cardHeight + "px";
+
+            var outerWidth = screenWidth - 55;
+	        document.getElementById("outer1").style.width = outerWidth + "px";
+
+            var imgHeight = parseInt(cardHeight * 0.5);
+            document.getElementById("img1").style.height = imgHeight + "px";
+            document.getElementById("img2").style.height = imgHeight + "px";
+            document.getElementById("img3").style.height = imgHeight + "px";
+        </script>
+    </body>
+</html>

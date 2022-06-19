@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="setting/main.css">
+    </head>
+    <body style="background-color:white;">
+        <p id="screen"></p>
+
+        <script>
+            // To calculate screen width and height
+            screenWidth = screen.width;
+            screenHeight = screen.height;
+
+            // To locate maps
+            mapBodyWidth = screenWidth - 55;
+            mapBodyHeight = screenHeight - 10;
+
+            function moveToHtml(name) {
+                var link = "continent/" + name + ".html";
+                location.href=link;location.replace(link);
+                window.open(link);
+            }
+            
+        </script>
+        
+        <header style="background-color:rgba(242, 242, 242, 0.8)">
+            <a href="main.html"><h1><img src="setting/earth.png" align=center width="40px" height="40px">  EarthHealthScreenings</h1></a>
+        </header>
+        
+        <div style="display:table; width:mapBodyWidth; height:mapBodyHeight; padding-top:15px; margin-left:55px;">
+            <div class="map_outer" style="width:352px; height:264px;">
+                <div class="map">
+                    <img src="mapImage/asia.png" class="imgScale" style="margin-top:24%; margin-left:199%;">
+                </div>
+            </div>
+            <div class="map_outer" style="width:352px; height:264px;">
+                <div class="map">
+                    <img src="mapImage/asia_color.png" class="color_map imgScale" style="margin-top:24%; margin-left:149%;" onclick="moveToHtml('asia')">
+                    <div class="text" style="width:352px; height:264px; margin-top:50%; margin-left:199%;" onclick="moveToHtml('asia')">ASIA</div>
+                </div>
+            </div>
+            <div class="map_outer" style="width:152px; height:112px;">
+                <div class="map">
+                    <img src="mapImage/europe.png" class="imgScale" style="margin-top:55%; margin-left:386%;">
+                </div>
+            </div>
+            <div class="map_outer" style="width:152px; height:112px;">
+                <div class="map">
+                    <img src="mapImage/europe_color.png" class="color_map imgScale" style="margin-top:55%; margin-left:336%;" onclick="moveToHtml('europe')">
+                    <div class="text" style="width:152px; height:112px; margin-top:90%; margin-left:410%;" onclick="moveToHtml('europe')">EUROPE</div>
+                </div>
+            </div>
+            <div class="map_outer" style="width:288px; height:384px;">
+                <div class="map">
+                    <img src="mapImage/america.png" class="imgScale" style="margin-top:44%; margin-left:53%;">
+                </div>
+            </div>
+            <div class="map_outer" style="width:288px; height:384px;">
+                <div class="map">
+                    <img src="mapImage/america_color.png" class="color_map imgScale" style="margin-top:44%; margin-left:3%;" onclick="moveToHtml('america')">
+                    <div class="text" style="width:288px; height:50px; margin-top:100%; margin-left:50%;" onclick="moveToHtml('america')">AMERICA</div>
+                </div>
+            </div>
+            <div class="map_outer" style="width:120px; height:104px;">
+                <div class="map">
+                    <img src="mapImage/oceania.png" class="imgScale" style="margin-top:329%; margin-left:807%;">
+                </div>
+            </div>
+            <div class="map_outer" style="width:120px; height:104px;">
+                <div class="map">
+                    <img src="mapImage/oceania_color.png" class="color_map imgScale" style="margin-top:329%; margin-left:757%;" onclick="moveToHtml('oceania')">
+                    <div class="text" style="width:120px; height:104px; margin-top:360%; margin-left:810%;" onclick="moveToHtml('oceania')">OCEANIA</div>
+                </div>
+            </div>
+            <div class="map_outer" style="width:184px; height:208px;">
+                <div class="map">
+                    <img src="mapImage/africa.png" class="imgScale" style="margin-top:127%; margin-left:300%;">
+                </div>
+            </div>
+            <div class="map_outer" style="width:184px; height:208px;">
+                <div class="map">
+                    <img src="mapImage/africa_color.png" class="color_map imgScale" style="margin-top:127%; margin-left:250%;" onclick="moveToHtml('africa')">
+                    <div class="text" style="width:184px; height:208px; margin-top:170%; margin-left:315%;" onclick="moveToHtml('africa')">AFRICA</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="left-side-bar" style="background-color:rgba(242, 242, 242, 0.8)">
+            <div class="status-ico">
+                <span><img src="setting/menu.png" width="30" height="30"></span>
+                <span><img src="setting/menu.png" width="30" height="30"></span>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="continent/asia.html">ASIA</a>
+                </li>
+                <li>
+                    <a href="continent/europe.html">EUROPE</a>
+                </li>
+                <li>
+                    <a href="continent/america.html">AMERICA</a>
+                </li>
+                <li>
+                    <a href="continent/oceania.html">OCEANIA</a>
+                </li>
+                <li>
+                    <a href="continent/africa.html">AFRICA</a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
